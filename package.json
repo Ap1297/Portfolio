@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Ankit.github.io",
+  "homepage": "https://Ap1297.github.io/Portfolio",
   "name": "ankit-panchal-test",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,6 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "emailjs": "^4.0.2",
-    "gh-pages": "^6.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",
@@ -56,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
