@@ -280,7 +280,7 @@ export const Bio = {
   description:
     "Accomplished Senior Associate with 6+ years of experience in Java full-stack development and DevOps. Recognized for driving customer-centric UI/UX solutions and delivering impactful outcomes within tight deadlines. Proficient in Java, Spring Boot, Microservices, and MEAN stack. Skilled in developing scalable applications and delivering innovative solutions in financial services, HRMS projects, and Enterprise Data Management.",
   github: "https://github.com/Ap1297",
-  resume: "https://drive.google.com/file/d/1zHdkhrLYYM9HrVE0i9YYK6cX8g3L5Gqv/view?usp=drive_link",
+  resume: "https://drive.google.com/file/d/1uFHqqfpnkm5LH1A71xU29c15X5dcceqv/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/ankit-panchal-developer/",
   insta: "",
 };
