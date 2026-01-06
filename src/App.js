@@ -6,11 +6,11 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
-// import Projects from "./components/Projects";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
-// import ProjectDetails from "./components/ProjectDetails";
+import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 
 const Body = styled.div`
@@ -33,12 +33,14 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
+// src/App.js additions and fixes
 function App() {
-  const [darkMode] = useState(true);
-  // const [openModal, setOpenModal] = useState({ state: false, project: null });
-  // console.log(openModal)
+  const [darkMode] = useState(false);
+  // Uncomment these lines to fix the compilation error
+  const [openModal, setOpenModal] = useState({ state: false, project: null }); 
+
   return (
-    <ThemeProvider theme={!darkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
         <Navbar />
         <Body>
@@ -47,15 +49,16 @@ function App() {
             <Skills />
             <Experience />
           </Wrapper>
-          {/* <Projects openModal={openModal} setOpenModal={setOpenModal} /> */}
+          {/* Now openModal and setOpenModal are defined */}
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
           <Wrapper>
             <Education />
-            {/* <Contact /> */}
           </Wrapper>
           <Footer />
-          {/* {openModal.state &&
+          {/* Uncomment to allow the project details popup to function */}
+          {openModal.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          } */}
+          )}
         </Body>
       </Router>
     </ThemeProvider>
